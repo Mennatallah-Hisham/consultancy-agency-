@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/style.css"/>
     <title>consultancy agency</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <p>logo</p>
         <nav class="main-nav">
             <ul class="nav-list">
@@ -24,7 +27,7 @@
     
     <main class="main">
         <!-- HERO -->
-        <section class="sec-hero">
+        <section class="sec-hero container">
             <div class="hero-content">
                 <h1 class="heading-primary">
                     your <span>consultancy</span> partner for your growth
@@ -35,23 +38,25 @@
 
                 <form class="form">
                     <input type="email" name="email" aria-label="email" placeholder="example@gmail.com" required>
-                    <button class="btn">sign up</button>
+                    <button class="btn btn-form">sign up</button>
                 </form>
             </div>
+            <img src="./imgs/hero-image.png" alt="" aria-hidden="true" class="hero-img"/>
 
         </section>
 
         <!-- ABOUT -->
         <section class="sec-about">
-            <div class="contianer">
+            <div class="container">
            
                 <h2 class="heading-secondary">about us</h2>
                 <p class="about-txt txt">
-                    <span>10 years working experience </span>
+                    <span class="bold-txt">10 years working experience </span>
                     to take care of your business goal
                 </p>
+                <img src="imgs/about.png" alt="" aria-hidden="true" class="about-img mt-m"/>
                 
-                <div class="stats">
+                <div class="stats mt-m">
                     <ul>
                         <li class="stat">
                             <span class="stat-num" data-number="603">603</span>
@@ -113,7 +118,8 @@
                 why us
             </h2>
             <p class="why-txt txt">
-                <span>reasons to choose us </span>
+                <span class="bold-txt">reasons  </span>
+                to choose us
             </p>
             <ul class="reasons">
                 <li>

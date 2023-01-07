@@ -1,0 +1,175 @@
+:root{
+
+    --clr-primary:#fff;
+    --clr-secondary:#F14836;
+    --clr-txt:#495057;
+    --clr-txt-d:#343a40;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+
+
+/******************general*********************/
+
+
+button,
+a:link{
+    display: inline-block;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding:0.5rem 2rem;
+    font-size: 1.6rem;
+}
+button{
+    border:none;
+    border-radius: 0.5rem;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    margin-inline: auto;
+   
+}
+
+
+
+
+
+
+/****** re-usable***********/
+.container{
+    width:95%;
+    margin-inline: auto;
+    border:1px solid red;
+}
+.heading-primary,
+.heading-secondary,
+.sub-heading{
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.heading-primary{
+    font-size: 4rem;
+}
+
+.heading-secondary{
+    font-size: 2.4rem;
+    color:var(--clr-secondary);
+    letter-spacing: 0.3rem;
+}
+.sub-heading{
+    font-size: 1.8rem;
+
+}
+.txt{
+    font-size: 1.6rem;
+    text-align: center;
+    color:var(--clr-txt);
+    width:80%;
+    max-width: 50rem;
+    margin-inline: auto;
+}
+
+.bold-txt{
+    font-weight:700;
+    color:var(--clr-txt-d)
+}
+
+.mt-m{
+    margin-top:3rem;
+}
+/********** header *************/
+.header{
+    background-color: var(--clr-secondary);
+    padding:1rem 0;
+    display: flex;
+    margin-bottom:2rem;
+    position: sticky;
+    top:0;
+    left:0;
+}
+nav ul{
+    display: flex;
+}
+
+/********** hero *************/
+
+.heading-primary span{
+    color:var(--clr-secondary);
+}
+
+.sec-hero{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap:3rem;
+}
+.form{
+  background-color: rgba(0, 0, 0, 0.112);
+border-radius:0.5rem;
+padding:1rem 1rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap:1rem;
+
+}
+.btn-form{
+    background-color: var(--clr-secondary);
+    color:var(--clr-primary);
+}
+.form input{
+    padding:1rem 1rem;
+    width:30rem;
+    outline: none;
+    border:none;
+    border-radius: 0.5rem;
+}
+.about-img,
+.hero-img{
+    height: 50rem;
+    
+}
+/******* about**********/
+.stats ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:4rem;
+}
+.stat-num{
+    font-size:4rem;
+    font-weight: 700;
+    color:var(--clr-txt-d);
+    display: block;
+    text-align: center;
+}
+.stat-title{
+    color:var(--clr-txt);
+    font-size:1.6rem;
+    text-transform: uppercase;
+}
